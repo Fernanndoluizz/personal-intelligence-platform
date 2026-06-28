@@ -1,0 +1,21 @@
+package io.personalintelligence.platform.shared.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class ApiInfo {
+
+    private String name;
+    private String version;
+    private String status;
+    private LocalDateTime timestamp;
+
+}
